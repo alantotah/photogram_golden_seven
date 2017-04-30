@@ -4,16 +4,16 @@
       <h1>Edit Photo <%= @photo.id %></h1>
       <form action="/update_photo/<%= @photo.id %>">
         <div>
-          <label for"url">
+          <label for="url">
             Image URL
           </label>
-          <input name="the_caption" value="<%= @photo.caption %>" type-"text" id="url">
+          <input name="the_source" type-"text" id="url" value="<%= @photo.source %>">
         </div>
         <div>
           <label for="caption">
             Caption
           </label>
-          <input name="the_source" type-"text" id="caption" value="<%= @photo.source %>">
+          <input name="the_caption" value="<%= @photo.caption %>" type-"text" id="caption">
         </div>
         <button> Update Photo </button>
       </form>

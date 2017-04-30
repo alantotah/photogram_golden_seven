@@ -42,5 +42,4 @@ class PhotosController < ApplicationController
     photo.destroy
     redirect_to("/photos")
   end
-
 end
